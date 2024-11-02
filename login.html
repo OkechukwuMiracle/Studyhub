@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body id="body">
+    <div class="login-container" id="Login">
+        <h1 class="login_h1">Login</h1>
+  
+        <form method="post" class="md_form" action="">
+          <div class="input-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="rEmail" placeholder="Email" required />
+          </div>
+  
+          <div class="input-group">
+            <i class="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              id="rPassword"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button class="btn" id="submitLogin">Login</button>
+        </form>
+
+        <div class="reg_p">
+            <p>Create an account?</p>
+            <button id="signBtn" class="signBtn">Signup</button>
+        </div>
+    </div>
+
+    <script type="module" src="login.js" defer></script>
+</body>
+</html>
