@@ -12,7 +12,7 @@
     height: 100vh;
 }
 
-.login-container {
+.container, .login-container {
     width: 30%;
     background-color: rgb(255, 255, 255, 0.1);
     border: 1px solid black;
@@ -22,8 +22,11 @@
     padding: 4% 3%;
 }
 
+.login-container {
+    display: none;
+}
 
-.login_h1 {
+.signup_h1, .login_h1 {
     text-align: center;
     margin-bottom: 6%;
     background: linear-gradient(to right, rgb(177, 167, 167), rgb(155, 10, 10));
@@ -45,8 +48,7 @@ input {
     border-radius: 10px;
     border: 1px solid rgb(179, 174, 174);
     font-size: 1rem;
-    font-weight: 600
-    /* color: ; */
+    font-weight: 600;
 }
 
 .btn {
@@ -77,10 +79,21 @@ input {
     color: rgb(179, 174, 174);
 }
 
-.signBtn {
+.logBtn, .signBtn {
     color: crimson;
     font-size: 1.4rem;
     background: none;
     border: transparent;
     cursor: pointer;
+}
+
+.messageDiv {
+    background-color: hsl(327,90%,28%);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeOut 7s forwards;
 }
