@@ -4,7 +4,6 @@ const signup_container  = document.getElementById('signup');
 const log_container = document.getElementById('signIn');
 
 login.addEventListener('click', ()=> {
-    // window.location.href = 'login.html';
     log_container.style.display = 'block'
     signup_container.style.display = 'none';
 })
